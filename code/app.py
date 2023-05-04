@@ -73,15 +73,8 @@ def classification_image(img_data, fileName):  # fileIamge, "kakao_img.png"
     result = text2cls.web_detect_1_2(text)
     print("---------- 해당 이미지의 text의 결과는 ----------")
     print(result)
-##################################################################        img_path = "static/img/kakao_img.png"
-    text = ocr2text.main(img_path, e=3, y_tolerance=3, y_large_tolerance=90)
-    print("----------------text")
-    print(text)
-    result = text2cls.web_detect_1_2(text)
-    print("-----------------------------프린트")
-    print(result)
+##################################################################
     emit("result", result)
-
 
 # text 받기
 @socketio.on("text data", namespace="/detect")
