@@ -1,0 +1,4 @@
+__pycache___
+.mypy_cache
+dockerfile
+wsgi.py

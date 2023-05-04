@@ -1,35 +1,17 @@
-#!/usr/bin/env python
-# coding: utf-8
+# from IPython import get_ipython
 
-# # Gal data Encoding functions by korBERT encoder
+# get_ipython().system('pip install keras-bert')
+# get_ipython().system('pip install keras-radam')
 
-# In[ ]:
-
-
-get_ipython().system('pip install keras-bert')
-get_ipython().system('pip install keras-radam')
-
-
-# In[ ]:
-
-
-import glob
-import pandas as pd
-import numpy as np 
-
-import os
-from tqdm import tqdm
 
 import codecs
+import glob
+import os
 
-
-# In[ ]:
-
-
+import numpy as np
+import pandas as pd
 from keras_bert import Tokenizer
-
-
-# In[ ]:
+from tqdm import tqdm
 
 
 # input을 txt로 받았을 때 데이터프레임을 만드는 함수
@@ -50,8 +32,11 @@ def make_table(txt_path):
     return df
 
 
-# In[ ]:
-
+def make_input(txt):
+    with open(txt, 'r', encoding='utf-8') as f:
+        text = f.read()
+    
+    return text
 
 #korBERT 사전으로 tokenize
 pretrained_path ="./bert" #상대경로 잡기
@@ -60,10 +45,6 @@ vocab_path = os.path.join(pretrained_path, 'vocab.txt')
 SEQ_LEN = 256
 DATA_COLUMN = "conversation"
 LABEL_COLUMN = "class"
-
-
-# In[ ]:
-
 
 #Token 딕셔너리 만들기
 token_dict = {}
@@ -74,11 +55,7 @@ with codecs.open(vocab_path, 'r', 'utf8') as reader:
             token = token.replace("_","")
             token = "##" + token
         token_dict[token] = len(token_dict)
-        #key(문자) = value(index)
-
-
-# In[ ]:
-
+      
 
 # tokenizer 클래스 만들기
 class inherit_Tokenizer(Tokenizer):
@@ -103,13 +80,7 @@ class inherit_Tokenizer(Tokenizer):
         return tokens
 
 
-# In[ ]:
-
-
 tokenizer = inherit_Tokenizer(token_dict)
-
-
-# In[ ]:
 
 
 def convert_data(data_df): #korBERT의 토큰 딕셔너리로 데이터를 인코딩하는 함수
@@ -124,9 +95,6 @@ def convert_data(data_df): #korBERT의 토큰 딕셔너리로 데이터를 인�
     indices, targets = zip(*items)
     indices = np.array(indices)
     return [indices, np.zeros_like(indices)], np.array(targets)
-
-
-# In[ ]:
 
 
 def load_data(pandas_dataframe): # 데이터 인코딩을 실행하는 함수
