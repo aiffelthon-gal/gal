@@ -7,9 +7,6 @@ def preprocess_input(df):
 
     df['conversation'] = df['conversation'].apply(lambda x: re.sub(r'(\d{1,2}):(\d{2})', r'\1시 \2분', str(x)))
     
-#     df['conversation'] = df['conversation'].apply(lambda x: re.sub(r'(\d{1,2}):(\d{2})', r'\1시 \2분', x))
-#     #4:50인 경우 4시 50분으로 바꾸기
-    
     df['conversation'] = df['conversation'].apply(lambda x: re.sub(r'[^\w\s.?!\\]', '', x)) #슬래시 살리기 추가
     # 문자열, 공백, 온점, 물음표, 느낌표 남기고 삭제
     
@@ -55,8 +52,7 @@ def preprocess_single_input(txt):
 def preprocess_df(df):
     df['conversation'] = df['conversation'].astype(str)
     df['conversation'] = df['conversation'].apply(lambda x: re.sub(r'(\d{1,2}):(\d{2})', r'\1시 \2분', str(x)))
-#     df['conversation'] = df['conversation'].apply(lambda x: re.sub(r'(\d{1,2}):(\d{2})', r'\1시 \2분', x))
-#     #4:50인 경우 4시 50분으로 바꾸기
+
     df['conversation'] = df['conversation'].apply(lambda x: re.sub(r'[^\w\s.?!<oov>]', '', x))
     # 문자열, 공백, 온점, 물음표, 느낌표,<oov> 남기고 삭제
     df['conversation'] = df['conversation'].apply(lambda x: re.sub('_', '', x))

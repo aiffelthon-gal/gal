@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 import os
 
 import cleaning_and_normalizing as cleandnor
@@ -126,9 +123,8 @@ model_2.load_weights("./saved/model_2_weights_0427.h5")
 model_3.load_weights("./saved/model_3_weights_0427.h5")
 
 
-
 # 본모델
-def model_ens_1_and_2(input_x, threshold_min=7.321e-06, threshold_max=0.999):
+def model_ens_1_and_2(input_x, threshold_min=7.321e-05, threshold_max=0.08):
     probs = model_1.predict(input_x)
     probs_2 = model_2.predict(input_x)
     class_dict = {
@@ -163,7 +159,7 @@ def model_ens_1_and_2(input_x, threshold_min=7.321e-06, threshold_max=0.999):
 
 
 
-def model_ens_1_and_3(input_x, threshold_min=7.321e-06):
+def model_ens_1_and_3(input_x, threshold_min=7.321e-05):
     probs = model_1.predict(input_x)
     probs_3 = model_3.predict(input_x)
     class_dict = {

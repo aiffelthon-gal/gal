@@ -1,9 +1,3 @@
-# from IPython import get_ipython
-
-# get_ipython().system('pip install keras-bert')
-# get_ipython().system('pip install keras-radam')
-
-
 import codecs
 import glob
 import os

@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# 글씨 크기 작은 이미지
 # 참고한 링크: https://yunwoong.tistory.com/148
 
 # 라이브러리 불러오기

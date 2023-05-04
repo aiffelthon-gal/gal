@@ -95,25 +95,6 @@ dropbox.addEventListener('drop', function (e) {
             socket.emit("image data", fileIamge, "kakao_img.png");
         };
 
-        // img.onload = function() {
-        //     // Resize image to fit the file_box div
-        //     if (img.width > img.height) {
-        //         img.style.width = "100%";
-        //         img.style.height = "75%";
-        //     } else {
-        //         img.style.width = "75%";
-        //         img.style.height = "100%";
-        //     }
-        //     // Convert the image to a data URL
-        //     let canvas = document.createElement("canvas");
-        //     canvas.width = img.width;
-        //     canvas.height = img.height;
-        //     let ctx = canvas.getContext("2d");
-        //     ctx.drawImage(img, 0, 0);
-        //     let fileIamge = canvas.toDataURL(fileType);
-        //     // flask로 보내기
-        //     socket.emit("image data", fileIamge, "kakao_img.png");
-        // };
         img.src = URL.createObjectURL(file);
         console.log(img.src)
         // 이미지 웹상에서 출력
