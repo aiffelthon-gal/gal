@@ -62,7 +62,7 @@ def build_model_1():
     outputs = keras.layers.Dense(
         1,
         activation="sigmoid",
-        kernel_initializer=keras.initializers.TruncatedNormal(stddev=0.02),
+        kernel_initializer=keras.initializers.TruncatedNormal(stddev=0.02, seed=1004),
         name="real_output",
     )(dense)
 
@@ -85,7 +85,7 @@ def build_model_2():
     outputs = keras.layers.Dense(
         4,
         activation="softmax",
-        kernel_initializer=keras.initializers.TruncatedNormal(stddev=0.02),
+        kernel_initializer=keras.initializers.TruncatedNormal(stddev=0.02, seed=1004),
         name="real_output",
     )(dense)
 
@@ -109,7 +109,7 @@ def build_model_3():
     outputs = keras.layers.Dense(
         5,
         activation="softmax",
-        kernel_initializer=keras.initializers.TruncatedNormal(stddev=0.02),
+        kernel_initializer=keras.initializers.TruncatedNormal(stddev=0.02, seed=1004),
         name="real_output",
     )(dense)
 
@@ -193,8 +193,6 @@ def model_ens_1_and_3(input_x, threshold_min=7.321e-06):
 
     return class_dict[label] + "입니다."
 
-
-# In[12]:
 
 
 def web_detect_1_2(str):  # 본모델
