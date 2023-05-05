@@ -40,3 +40,14 @@
 ---
 <img width="497" alt="데이터셋" src="https://user-images.githubusercontent.com/103846429/236128663-313077b5-e3bd-4c48-b8ac-0e15bd10f73c.png">
 
+---
+:chart_with_upwards_trend: 사용한 모델
+---
+<img width="1500" alt="BERT model" src="https://user-images.githubusercontent.com/103846429/236450943-f28a9589-2df2-4315-9596-2867afccb2be.png">
+
+
+---
+:dizzy: 접근 방식
+---
+<img width="1500" alt="OOD" src="https://user-images.githubusercontent.com/103846429/236450979-57e38c10-13c4-45f8-a26f-09524a68e766.png">
+
