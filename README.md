@@ -1,4 +1,4 @@
-[<img width="1333" alt="Screenshot 2023-05-05 at 15 54 08" src="https://user-images.githubusercontent.com/103846429/236394181-ecc6f108-b4f4-41cf-8ec4-7f99862906be.png">](https://www.notion.so/modulabs/70d9271884ab4c3d909b617a999e5adc)  
+[<img width="1333" alt="갈 이미지" src="https://user-images.githubusercontent.com/103846429/236394181-ecc6f108-b4f4-41cf-8ec4-7f99862906be.png">](https://www.notion.so/modulabs/70d9271884ab4c3d909b617a999e5adc)  
 # :dog: 갈! [<<암묵적 언어폭력 탐지에 관한 연구>>](https://www.notion.so/modulabs/70d9271884ab4c3d909b617a999e5adc)  
 :telescope: 본 프로젝트는 “아이펠”과정 중 “아이펠톤”기간에 진행하였습니다.  
 :calendar: `(23.03.24 ~ 23.05.08)`  
@@ -15,7 +15,7 @@
 ---
 :pushpin: sample 1 
 
-<img width="594" alt="Screenshot 2023-05-04 at 15 35 51" src="https://user-images.githubusercontent.com/103846429/236128188-35e38b52-4eaa-499e-96cc-5da2b946a3ca.png">
+<img width="594" alt="카톡 샘플" src="https://user-images.githubusercontent.com/103846429/236128188-35e38b52-4eaa-499e-96cc-5da2b946a3ca.png">
 
 :pushpin: sample 2
 >태경씨 오늘 퇴근 일찍하네?  
@@ -33,10 +33,10 @@
 ---
 :computer: 웹 서비스
 ---
-<img width="1336" alt="Screenshot%202023-05-04%20at%2017 29 16" src="https://user-images.githubusercontent.com/103846429/236398564-c68f75dc-1a7d-4e17-83a3-12e73f4da815.png">
+<img width="1336" alt="웹 이미지" src="https://user-images.githubusercontent.com/103846429/236398564-c68f75dc-1a7d-4e17-83a3-12e73f4da815.png">
 
 ---
 :cd: 데이터셋
 ---
-<img width="497" alt="Screenshot%202023-05-02%20at%2013 00 26" src="https://user-images.githubusercontent.com/103846429/236128663-313077b5-e3bd-4c48-b8ac-0e15bd10f73c.png">
+<img width="497" alt="데이터셋" src="https://user-images.githubusercontent.com/103846429/236128663-313077b5-e3bd-4c48-b8ac-0e15bd10f73c.png">
 
