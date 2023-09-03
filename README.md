@@ -1,5 +1,5 @@
 [<img width="1333" alt="갈 이미지" src="https://user-images.githubusercontent.com/103846429/236394181-ecc6f108-b4f4-41cf-8ec4-7f99862906be.png">](https://www.notion.so/modulabs/70d9271884ab4c3d909b617a999e5adc)  
-# :dog: 갈! [<<암묵적 언어폭력 탐지에 관한 연구>>](https://www.notion.so/modulabs/70d9271884ab4c3d909b617a999e5adc)  
+# :dog: 갈! [<<암묵적 언어폭력 탐지에 관한 연구>>](https://m05.notion.site/20d81a929b294eb4a28a248c9acfe28b?pvs=4)  
 :telescope: 본 프로젝트는 “아이펠”과정 중 “아이펠톤”기간에 진행하였습니다.  
 :calendar: `(23.03.24 ~ 23.05.08)`  
 
